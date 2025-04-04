@@ -1,42 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-*{
+* {
     font-family: "Lato", sans-serif;
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6,span{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
     color: black;
     text-align: center;
     line-height: 1.25;
 }
-p{
-    line-height:1.5 ;
+
+p {
+    line-height: 1.5;
     font-size: 10px;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-.row{
+.row {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.text-purple{
+.text-purple {
     color: purple;
 }
- h1{
+
+h1 {
     font-size: 36px;
- }
+}
+
+.container_background {
+    background-color: rgb(43, 86, 226);
+    background-image: url(https://marketplace.canva.com/EAGStUWDfPs/1/0/1131w/canva-pink-and-blue-watercolor-background-poster-XvPBzE5-qOk.jpg)
+}
 
 /* Navigation Bar */
 
-nav{
+nav {
     height: 100px;
     width: 100%;
     max-width: 1000px;
@@ -46,29 +59,30 @@ nav{
     align-items: center;
 }
 
-.nav__link--list{
+.nav__link--list {
     display: flex;
 }
 
-.nav__link--anchor{
+.nav__link--anchor {
     margin: 0 12px;
     color: black;
-    text-decoration:none;
+    text-decoration: none;
     font-weight: 700;
 }
 
-.nav__link--primary{
+.nav__link--primary {
     background-color: purple;
     padding: 9px 20px;
     border-radius: 50px;
     color: white;
 }
-.nav__link--anchor-primary:hover{
-    background-color:purple;
+
+.nav__link--anchor-primary:hover {
+    background-color: purple;
     border-radius: 100px;
 }
 
-.personal__logo{
+.personal__logo {
     font-size: 24px;
     color: purple;
     margin: 0 12px;
@@ -77,98 +91,114 @@ nav{
 
 /* ABOUT ME */
 
-#about-me{
-    display: flex;
-    flex-direction: column;
-}
-.about-me__info{
+#about-me {
     display: flex;
     flex-direction: column;
 }
 
-.about-me__info--container{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 0 auto;
-text-align: center;
+.about-me__info {
+    display: flex;
+    flex-direction: column;
 }
 
-.about-me__picture-mask{
-width: 100PX;
-height: 100PX;
-border-radius: 50%;
-overflow: hidden;
-box-shadow: 0 8px 16px black;
-margin-bottom: 28px;
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me__picture-mask {
+    width: 100PX;
+    height: 100PX;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px black;
+    margin-bottom: 28px;
 
     /*improving my picture*/
 
-    transform:scale(1.5);
+    transform: scale(1.5);
     width: 0 auto;
 }
-.about-me__info--title{
+
+.about-me__info--title {
     margin-bottom: 16px;
 }
-.about-me__info--para{
+
+.about-me__info--para {
     font-size: 20px;
     margin-bottom: 20px;
 }
-.about-me__link{
+
+.about-me__link {
     font-size: 20px;
     color: black;
     text-decoration: none;
     padding: 0 16px;
 }
 
-.about-me__info--container{
+.about-me__info--container {
     flex: 1;
     display: flex;
     align-items: center;
 }
-.about-me_image{
+
+.about-me_image {
     width: 100%;
 }
 
-.pictureOfMe{ 
+.pictureOfMe {
     width: 100%;
     height: 130%;
 }
 
+.golden_gate {
+    width: 300px;
+    height: 300px;
+}
+
+#golden_gate {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 /* TECH-STACK */
 
-.language__img{
+.language__img {
     width: 100%;
     max-width: 100px;
     transition: all 300ms;
 }
 
 .language__img .language:hover {
-    filter: brightness(80%)
-    opacity(0.86);
+    filter: brightness(80%) opacity(0.86);
     transform: scale(0.9);
 
 }
-.language{
+
+.language {
     width: 25%;
     display: flex;
     justify-content: center;
 }
 
-.language__img--wrapper{
+.language__img--wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 25px 16px;
 }
 
-.language__list{
+.language__list {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
 
-.language__name{
+.language__name {
     position: absolute;
     bottom: 0;
     transform: scale(0);
